@@ -1,0 +1,50 @@
+.form {
+    width: 350px;
+    height: 340px;
+    padding-top: 35px;
+    border: 1px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input {
+    margin: 10px 15px;
+    padding: 12px;
+    background-color: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+.description {
+    width: 320px;
+}
+
+label {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 90px;
+}
+
+select {
+    max-width: 150px;
+    padding: 12px;
+    background: #F8F9FA;
+    border: 2px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color:#5B6166;
+}
+
+button {
+    color: #FFFFFF;
+    width: 314px;
+    height: 48px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background: #FD377E;
+    border: 2px solid #FD377E;
+    box-sizing: border-box;
+    border-radius: 8px;
+}

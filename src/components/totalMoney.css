@@ -1,0 +1,28 @@
+.totalMoney {
+    width: 350px;
+    border: 1px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    align-items: baseline;
+    padding-right: 20px;
+    color: #FD377E;
+    font-weight: 700;
+
+}
+
+.labelTotalMoney {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: #212529;
+}
+
+.labelTotalMoney span {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #5B6166;
+    font-weight: lighter;
+}
