@@ -1,58 +1,65 @@
-import './form.css'
-import { useState } from "react"
+import "./form.css";
+import { useState } from "react";
 
-export const Form = ({listTransactions, setListTransactions}) => {
-  const [description, setDescription] = useState("")
-  const [type, setType] = useState("")
-  const [value, setValue] = useState("")
+export const Form = ({ listTransactions, setListTransactions }) => {
+  const [description, setDescription] = useState("");
+  const [type, setType] = useState("");
+  const [value, setValue] = useState("");
 
   const newTransaction = {
     description,
-    type, 
-    value: Number(value)
-  }
+    type,
+    value: Number(value),
+  };
 
   const addTransaction = (addNew) => {
-    setListTransactions([...listTransactions, addNew])
-  }
+    setListTransactions([...listTransactions, addNew]);
+  };
 
   const handleTransactions = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    addTransaction(newTransaction)
-  }
+    addTransaction(newTransaction);
+  };
 
-    return (
-    <div className='form'>
+  return (
+    <div className="form">
       <form onSubmit={handleTransactions}>
-        
-        <label>Descrição</label>
+        <label>
+          Descrição
+          <input
+            className="description"
+            placeholder="Digite aqui sua descrição"
+            type="text"
+            required
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </label>
 
-        <input className='description'
-        placeholder='Digite aqui sua descrição'
-        type='text' 
-        onChange={(e) => setDescription(e.target.value)}
-        />
-        
-        <label>Valor</label>
-        <input 
-        placeholder='R$'
-        type='text'
-        onChange={(e) => setValue(e.target.value)}
-        />
+        <div className="inputValue">
+          <label>
+            Valor
+            <input
+              placeholder="R$"
+              type="number"
+              min="1"
+              onChange={(e) => setValue(e.target.value)}
+            />
+          </label>
 
-        <select onChange={(e) => setType(e.target.value)}>
-          <option value="" disabled selected hidden>Selecione</option>
-          <option>Entrada</option>
-          <option>Saída</option>
-        </select>
-        
-        
+          <label>
+            Tipo de valor
+            <select onChange={(e) => setType(e.target.value)}>
+              <option value="" disabled selected hidden>
+                Selecione
+              </option>
+              <option>Entrada</option>
+              <option>Saída</option>
+            </select>
+          </label>
+        </div>
         <button type="submit">Inserir valor</button>
-        
-        
       </form>
     </div>
-    )
-    
-  }
+  );
+};
