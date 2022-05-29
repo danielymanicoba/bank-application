@@ -2,42 +2,102 @@
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .header {
   margin-bottom: 50px;
   height: 88px;
-  width: 100%;
   background-color: #f8f9fa;
   box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header img {
-  margin-top: 32px;
   margin-left: 14%;
+  width: 125px;
+}
+.header button {
+  margin-right: 20px;
+  width: 64px;
+  height: 40px;
+  color: #5b6166;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
 }
 
 .sideBox {
-  width: 90%;
   display: flex;
   flex-direction: column;
+  width: 380px;
   align-items: center;
   margin-bottom: 40px;
 }
 
 .list {
-  width: 100%;
+  padding: 0 20px;
+}
+
+.list img {
+  width: 380px;
+}
+
+.navBar {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.btnsContainer {
+  display: flex;
+  width: 380px;
+  justify-content: space-around;
+}
+
+.navBarButton {
+  padding: 10px;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 @media (min-width: 600px) {
   .App {
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
-    margin: 0 auto;
+  }
+  .header button {
+    margin-right: 14%;
   }
 
   .sideBox {
     width: 360px;
+  }
+
+  .list {
+    margin-left: 35px;
+  }
+
+  .list img {
+    width: 600px;
+  }
+
+  .navBar {
+    align-items: baseline;
+  }
+  .btnsContainer {
+    justify-content: end;
+    gap: 10px;
+  }
+
+  .navBarButton {
+    font-size: 14px;
+    height: 40px;
   }
 }
