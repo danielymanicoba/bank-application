@@ -39,6 +39,7 @@ export const Form = ({ listTransactions, setListTransactions }) => {
         <label>
           Valor
           <input
+            required
             type="number"
             placeholder="R$"
             min="1"
@@ -52,11 +53,11 @@ export const Form = ({ listTransactions, setListTransactions }) => {
             name="tipo de valor"
             onChange={(e) => setType(e.target.value)}
           >
-            <option hidden defaultValue>
+            <option hidden selected value="">
               Selecione
             </option>
-            <option>Entrada</option>
-            <option>Despesa</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Despesa">Despesa</option>
           </select>
         </label>
       </div>
