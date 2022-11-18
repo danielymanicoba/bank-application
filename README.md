@@ -1,9 +1,9 @@
 <h1 align="center">
-    <a href="https://react-entrega-s1-nu-kenzie-danielymanicoba.vercel.app/">🔗 Nu Kenzie</a>
+    <a href="https://bank-application-danielymanicoba.vercel.app/">🔗 Nu Kenzie</a>
 </h1>
 <p align="center">Aplicação para contabilizar entradas e saídas de dinheiro.</p>
 
-[![Vercel Badge](https://img.shields.io/badge/vercel-3D46FC?style=for-the-badge&logo=Vercel&link=https://react-entrega-s1-nu-kenzie-danielymanicoba.vercel.app/)](https://react-entrega-s1-nu-kenzie-danielymanicoba.vercel.app/)
+[![Vercel Badge](https://img.shields.io/badge/vercel-3D46FC?style=for-the-badge&logo=Vercel&link=https://bank-application-danielymanicoba.vercel.app/)](https://bank-application-danielymanicoba.vercel.app/)
 
 ### :clipboard: Features
 
